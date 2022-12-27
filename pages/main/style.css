@@ -1,11 +1,71 @@
 body{
     margin: 0px;
+
+}
+.bg-gradient{
+    width: 100vw;
+    height: 100vw;
+    background: radial-gradient(90vw circle at -15% -5%, #5B483A, #262425);
+
+}
+.bg-img{
+    width: 100vw;
+    height: 100vw;
     display: flex;
     justify-content: center;
-    background-image: url(/assets/images/bg-img.png);
+    background-image: url(../../assets/images/bg-img.png);
 }
 .main{
     width: 1280px;
-    height: 908px;
-    background-color: rgb(165, 35, 35);
+    display: flex;
+    justify-content: center;
+}
+.logo-title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color:#F1CDB3;
+    margin: 0px;
+}
+.logo-subtitle{
+    color: #FFF;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93.8%;
+    margin-top: 4.7%;
+    height: 4.7%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 37%;
+}
+a{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
