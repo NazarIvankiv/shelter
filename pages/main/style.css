@@ -1,12 +1,11 @@
 body{
     margin: 0px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
-    background-image: url(/assets/images/noise_transparent.png);
+    background-image: url(/assets/images/bg-img.png);
 }
 .main{
     width: 1280px;
     height: 908px;
-    background-color: black;
+    background-color: rgb(165, 35, 35);
 }
