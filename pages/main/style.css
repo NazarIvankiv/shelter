@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/images/noise_transparent.png);
+}
+.main{
+    width: 1280px;
+    height: 908px;
+    background-color: black;
+}
