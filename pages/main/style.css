@@ -11,12 +11,15 @@ body{
 .bg-img{
     width: 100vw;
     height: 100vw;
-    display: flex;
+    display:flex;
     justify-content: center;
     background-image: url(../../assets/images/bg-img.png);
 }
-.main{
+.start-screen{
     width: 1280px;
+    height: 908px;;
+}
+.main{
     display: flex;
     justify-content: center;
 }
@@ -68,4 +71,64 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.start-screen-puppy{
+    background: url(../../assets/images/start-screen-puppy.png) no-repeat;
+    background-size:initial;
+    width: 55vw;
+    height: 57vw;
+}
+.start-screen-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 93.8%;
+    margin:3% 2% 0% 2.3%;
+}
+.content{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.heading{
+    width: 25vw;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.subheading{
+    width: 37vw;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #CDCDCD;
+    margin:42px 0px;
+}
+.button-primary{
+    background: #F1CDB3;
+    border-radius: 100px;
+    width: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    padding: 17.5px 0px;
 }
