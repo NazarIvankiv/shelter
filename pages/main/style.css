@@ -337,3 +337,174 @@ li{
     padding: 0px;
     margin: 4.4% 0% 8% 0%;
 }
+.donation-page{
+    background: #F6F6F6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.donation-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4.2%;
+    margin-bottom: 9.4%;
+}
+.donation-dog{
+    background: url(../../assets/images/donation-dog.png) no-repeat;
+    width: 505px;
+    height: 261px;
+    display: flex;
+    margin-top: 3.4%;
+    margin-right: 30px;
+}
+.donation-heading{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 5px;
+}
+.donation-subheading{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 20px;
+}
+.legal-information{
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.card-icon{
+    background: url(../../assets/icons/credit-card.svg);
+    width: 30px;
+    height: 24px;
+    margin-right: 15px;
+}
+.credit-card{
+    padding-top: 2.5%;
+    width: 349px;
+    height: 43px;
+    background: #F1CDB3;
+    border-radius: 9px;
+    border: #F1CDB3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+/* .////////////////////////////////////////////////////////////// */
+.footer{
+    display: flex;
+    background:radial-gradient(90vw circle at 0% 0%, #5B483A, #262425);
+    width: 100%;
+}
+.footer-bg-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/images/bg-img.png);
+}
+.footer-content{
+    display:flex;
+    flex-direction: row;
+    margin: 0% 3.2%;
+}
+.footer-dog{
+    width: 300px;
+    height: 310px;
+    background: url(../../assets/images/footer-puppy.png) no-repeat;
+    background-size: contain;
+    margin-top: 40px;
+}
+.contacts-heading,.location-heading{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 0%;
+}
+.location-heading{
+    margin-top: 20%;
+}
+.contacts-heading{
+    margin-top: 22%;
+}
+.email,.number,.location-boston,.location-london{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 14.5%;
+    margin-right: 0%;
+}
+.number,.location-london{
+    margin-bottom: 10%;
+}
+.email-icon{
+    background: url(../../assets/icons/icon-email.svg);
+    width: 40px;
+    height: 32px;
+    margin-right: 7.5%;
+}
+.number-icon{
+    background: url(../../assets/icons/icon-phone.svg);
+    width: 40px;
+    height: 32px;
+    margin-right: 7.5%;
+}
+.location-icon{
+    background: url(../../assets/icons/icon-marker.svg);
+    width: 22px;
+    height: 32px;
+    margin-right: 7.5%;
+}
+.locations{
+    width: 25.5%;
+}
+.contacts{
+    width: 23.5%;
+}
+.locations,.contacts{
+    margin-right: 13.35%;
+}
+.location-boston{
+    margin:34px 0% 32px 0%;
+}
+.location-london{
+    margin-top: 32px;
+}
