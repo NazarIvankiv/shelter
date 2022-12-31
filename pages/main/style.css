@@ -99,6 +99,7 @@ a{
     align-items: center;
     color: #FFFFFF;
     margin: 0px;
+    cursor:default;
 }
 .subheading{
     width: 98%;
@@ -111,6 +112,7 @@ a{
     align-items: center;
     color: #CDCDCD;
     margin:42px 0px;
+    cursor:default;
 }
 .button-primary{
     background: #F1CDB3;
@@ -168,6 +170,7 @@ a{
     letter-spacing: 0.06em;
     color: #545454;
     margin:14px 0px 12.5px 0px;
+    cursor:default;
 }
 .about-subheading{
     font-family: 'Arial';
@@ -177,6 +180,7 @@ a{
     line-height: 160%;
     color: #4C4C4C;
     margin: 12.5px 0px 18px 0px;
+    cursor:default;
 }
 .page-content{
     width: 35%;
@@ -206,13 +210,17 @@ a{
     letter-spacing: 0.06em;
     color: #545454;
     margin-top: 6.3%;
+    cursor:default;
 }
 .other-page{
+    text-align: center;
     border: none;
     width: 261px;
     height: 52px;
     background: #F1CDB3;
     border-radius: 100px;
+}
+.rest-link{
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -220,6 +228,7 @@ a{
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
+    margin: 0px;
 }
 .button-rest{
     display: flex;
@@ -263,6 +272,7 @@ img{
 .left-button,.right-button{
     width: 52px;
     height: 52px;
+    font-size: 17px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     background-color: #F6F6F6;
@@ -306,6 +316,7 @@ img{
     color: #545454;
     margin-top: 80px;
     margin-bottom: 60px;
+    cursor:default;
 }
 .first-row{
     display: flex;
@@ -326,6 +337,7 @@ li{
     letter-spacing: 0.06em;
     color: #545454;
     margin:0% 4.7% 0% 4.7%;
+    cursor:default;
 }
 .icons{
     width: 60px;
@@ -369,6 +381,7 @@ li{
     letter-spacing: 0.06em;
     color: #545454;
     margin-bottom: 5px;
+    cursor:default;
 }
 .donation-subheading{
     font-family: 'Georgia';
@@ -381,6 +394,7 @@ li{
     letter-spacing: 0.06em;
     color: #545454;
     margin-bottom: 20px;
+    cursor:default;
 }
 .legal-information{
     font-family: 'Arial';
@@ -393,6 +407,7 @@ li{
     color: #B2B2B2;
     margin-top: 20px;
     margin-bottom: 0px;
+    cursor:default;
 }
 .card-icon{
     background: url(../../assets/icons/credit-card.svg);
@@ -401,15 +416,13 @@ li{
     margin-right: 15px;
 }
 .credit-card{
-    padding-top: 2.5%;
     width: 349px;
     height: 43px;
     background: #F1CDB3;
     border-radius: 9px;
     border: #F1CDB3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+}
+.credit-link{
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -417,6 +430,10 @@ li{
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #545454;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
 }
 /* .////////////////////////////////////////////////////////////// */
 .footer{
@@ -451,6 +468,7 @@ li{
     letter-spacing: 0.06em;
     color: #FFFFFF;
     margin-bottom: 0%;
+    cursor:default;
 }
 .location-heading{
     margin-top: 20%;
@@ -507,4 +525,49 @@ li{
 }
 .location-london{
     margin-top: 32px;
+}
+/* ///////////////////////////interactive buttons///////////////////////////////// */
+.our-pets:hover,.help-the-shelter:hover,.nav-contacts:hover{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #FAFAFA;
+    text-decoration:solid underline #F1CDB3 3px;
+    text-underline-offset: 7px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.button-primary:hover{
+    background-color:#9b8474 ;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.247);
+}
+.left-button:hover,.right-button:hover{
+    cursor: pointer;
+    background-color:#ececec ;
+    border-color: #a57e62;
+    box-shadow:2px 1px #26242515;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 2px #F1CDB3;
+    background: #f5f5f5;
+}
+.button-learn-more:hover{
+    cursor: pointer;
+    background-color:#F1CDB3 ;
+    border-color: #a57e62;
+}
+.other-page:hover{
+    background-color:#ac9280;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px #61616138;
+}
+.credit-card:hover{
+    background-color:#ac9280;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px #61616138;
+    color: black;
 }
