@@ -550,7 +550,7 @@ li{
     border-color: #a57e62;
     box-shadow:2px 1px #26242515;
 }
-.card:hover{
+.card:hover button{
     cursor: pointer;
     box-shadow: 0px 4px 2px #F1CDB3;
     background: #f5f5f5;
