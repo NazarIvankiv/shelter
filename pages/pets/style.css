@@ -48,7 +48,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 37%;
+    width: 445px;
 }
 a{
     font-family: 'Arial';
@@ -235,6 +235,7 @@ img{
 }
 .footer-content{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin: 0% 3.2%;
 }
@@ -298,17 +299,43 @@ img{
     margin-right: 7.5%;
 }
 .locations{
-    width: 25.5%;
+    width: 302px;
 }
 .contacts{
-    width: 23.5%;
+    width: 288px;
 }
 .locations,.contacts{
-    margin-right: 13.35%;
+    margin-right: 10%;
 }
 .location-boston{
     margin:34px 0% 32px 0%;
 }
 .location-london{
     margin-top: 32px;
+}
+@media (max-width:768px) {
+    header{
+        width: 708px;
+        height: 60px;
+    }
+}
+@media (max-width:1280px){
+    .footer-content{
+        justify-content: center;
+    }
+    .locations{
+        margin-right: 0%;
+    }
+    .contacts{
+        margin-right: 10%;
+    }
+}
+@media(max-width:1000px) {
+    .resp{
+        position: absolute;
+        z-index: -1;
+    }
+    .cards{
+        justify-content: space-around;
+    }
 }
