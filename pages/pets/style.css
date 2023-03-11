@@ -47,6 +47,10 @@ header{
 }
 .menu{
     display: flex;
+    width: 445px;
+}
+.dark-screen{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 445px;
@@ -353,11 +357,12 @@ img{
         justify-content: space-around;
     }
 }
-@media (max-width:720px) {
+@media (max-width:768px) {
     header{
         display: flex;
         width: 95%;
         justify-content: space-between;
+        margin-top: 4.7%;
     }
     .content{
         width: 300px;
@@ -375,19 +380,12 @@ img{
     #menu__toggle {
         opacity: 0;
       }
-      #menu__toggle:checked + .menu__btn > span {
-        transform: rotate(90deg);
-      }
-     
-      #menu__toggle:checked ~ .menu {
-        right: 0 !important;
-      }
       .menu__btn {
         position: relative;
         width: 30px;
         height: 22px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 6;
       }
       .menu__btn > span,
       .menu__btn > span::before,
@@ -413,12 +411,27 @@ img{
         flex-direction: column;
         justify-content: center;
         top: 0;
-        right: 100%;
+        z-index: 5;
+        width:100%;
+        height: 100vh;
+        margin: 0;
+        padding-left: 10px;
+        background: rgba(41, 41, 41, 0.6);
+        transition-duration: .25s;
+      }
+      .dark-screen{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5;
+        top: 0;
+        right: 0;
         width: 310px;
         height: 823px;
         margin: 0;
         padding-left: 10px;
-        background-color: #FFFFFF;
+        background-color: #FAFAFA;
         transition-duration: .25s;
       }
       .our-pets,.help-the-shelter,.about,.nav-contacts {
@@ -435,7 +448,7 @@ img{
     }
       .logo2{
         z-index: 1;
-        top: 30px;
+        top: 10px;
       }
     .donation-dog{
         width:260px;
@@ -453,9 +466,37 @@ img{
         position: absolute;
         z-index: -1;
     }
+    .logo-title2{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color:#545454;
+        margin: 0px;
+    }
+    .logo-subtitle2{
+        color: #292929;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+    }
+
 
 }
 @media(max-width:450px) {
+    header{
+        width: 257px;
+        margin-right: 40px;
+    }
     .legal-information{
         width: 280px;
     }
@@ -491,4 +532,14 @@ img{
         text-align: center;
         margin-top: 42px;
     }
+}
+.open-menu{
+    right: 0;
+}
+.close-menu{
+    right: 100%;
+}
+.menu-rotate{
+    transform: rotate(90deg);
+    transition-duration: .25s;
 }

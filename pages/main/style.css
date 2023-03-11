@@ -51,6 +51,10 @@ header{
 }
 .menu{
     display: flex;
+    width: 445px;
+}
+.dark-screen{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 445px;
@@ -72,7 +76,7 @@ a{
     background: url(../../assets/images/start-screen-puppy.png) no-repeat;
     background-size:contain;
     width: 689px;
-    height: 728px;
+    height: 719px;
 }
 .start-screen-content{
     display: flex;
@@ -647,7 +651,7 @@ li{
         margin: 60px 0px 0px 0px;
     }
 }
-@media (max-width:720px) {
+@media (max-width:768px) {
     header{
         display: flex;
         width: 95%;
@@ -669,19 +673,13 @@ li{
     #menu__toggle {
         opacity: 0;
       }
-      #menu__toggle:checked + .menu__btn > span {
-        transform: rotate(90deg);
-      }
      
-      #menu__toggle:checked ~ .menu {
-        right: 0 !important;
-      }
       .menu__btn {
         position: relative;
         width: 30px;
         height: 22px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 6;
       }
       .menu__btn > span,
       .menu__btn > span::before,
@@ -706,8 +704,23 @@ li{
         position: absolute;
         flex-direction: column;
         justify-content: center;
+        z-index: 5;
         top: 0;
-        right: 100%;
+        width:100%;
+        height: 100vh;
+        margin: 0;
+        padding-left: 10px;
+        background: rgba(41, 41, 41, 0.6);
+        transition-duration: .25s;
+      }
+      .dark-screen{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 5;
+        top: 0;
+        right: 0;
         width: 310px;
         height: 823px;
         margin: 0;
@@ -729,7 +742,7 @@ li{
     }
       .logo2{
         z-index: 1;
-        top: 30px;
+        top: 10px;
       }
     .donation-dog{
         width:260px;
@@ -746,7 +759,18 @@ li{
     .first-row{
         flex-wrap: wrap;
     }
-
+    .start-screen{
+        width: 100%;
+    }
+    .start-screen-content{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin:0px;
+    }
+    .heading{
+        width: 100%;
+    }
 }
 @media(max-width:450px) {
     .page-content{
@@ -795,8 +819,7 @@ li{
         text-align: center;
     }
     header{
-        width: 257px;
-        margin-right: 40px;
+        margin:20px 40px 0px 10px;
     }
     .about-subheading{
         width: 270px;
@@ -837,4 +860,17 @@ li{
     .footer-content{
         margin: 0px;
     }
+    .start-screen-puppy{
+        margin-left: 40px;
+    }
+}
+.open-menu{
+    right: 0;
+}
+.close-menu{
+    right: 100%;
+}
+.menu-rotate{
+    transform: rotate(90deg);
+    transition-duration: .25s;
 }
