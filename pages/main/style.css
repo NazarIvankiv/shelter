@@ -605,12 +605,6 @@ li{
         margin-right: 10%;
     }
 }
-@media(max-width:1000px) {
-    .resp{
-        position: absolute;
-        z-index: -1;
-    }
-}
 @media (max-width:768px){
     header{
         width: 708px;
@@ -749,10 +743,6 @@ li{
         height: 135px;
         background-size: contain;
     }
-    .resp2{
-        position: absolute;
-        z-index: -1;
-    }
     .cards{
         justify-content: center;
     }
@@ -873,4 +863,8 @@ li{
 .menu-rotate{
     transform: rotate(90deg);
     transition-duration: .25s;
+}
+.resp{
+    position: absolute;
+    z-index: -1;
 }
