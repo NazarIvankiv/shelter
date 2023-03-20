@@ -331,11 +331,9 @@ img{
     margin-top: 32px;
 }
 
-@media (max-width:768px) {
-    header{
-        width: 708px;
-        height: 60px;
-    }
+.resp{
+    position: absolute;
+    z-index: -1;
 }
 @media (max-width:1280px){
     .footer-content{
@@ -348,11 +346,7 @@ img{
         margin-right: 10%;
     }
 }
-@media(max-width:1000px) {
-    .resp{
-        position: absolute;
-        z-index: -1;
-    }
+@media(max-width:1280px) {
     .cards{
         justify-content: space-around;
     }
@@ -454,10 +448,6 @@ img{
         width:260px;
         height: 135px;
         background-size: contain;
-    }
-    .resp2{
-        position: absolute;
-        z-index: -1;
     }
     .cards{
         justify-content: center;

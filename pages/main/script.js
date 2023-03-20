@@ -64,14 +64,17 @@ fetch('../../assets/pets.json')
             console.log(data)
             card1img.setAttribute('src',data[result[0]].img)
             petName1.innerHTML = data[result[0]].name
+            result.shift()
             if(!card2.classList.contains('resp')){
               card2img.setAttribute('src',data[result[1]].img)
               petName2.innerHTML = data[result[1]].name
+              result.shift()
               console.log('2card done')
             }
             if(!card3.classList.contains('resp')){
               card3img.setAttribute('src',data[result[2]].img)
               petName3.innerHTML = data[result[2]].name
+              result.shift()
               console.log('3card done')
             }
             function Imgset(){
