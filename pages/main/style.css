@@ -868,3 +868,118 @@ li{
     position: absolute;
     z-index: -1;
 }
+.popup{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(41, 41, 41, 0.6);
+}
+.closepopup{
+    position: absolute;
+    z-index: -8;
+}
+.popupbutton{
+    width: 65%;
+    height: 552px;
+    display: flex;
+}
+.closebutton{
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #292929;
+    border:2px solid #F1CDB3;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popupinfo{
+    width: 900px;
+    height: 500px;
+    background: #FFFFFF;
+    margin-top:52px ;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modalimg{
+    height: 100%;
+    width: 56%;
+}
+.modalinfo{
+    height: 100%;
+    width: 44% ;
+    text-align: left;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.modalname{
+    font-size: 35px;
+}
+.type{
+    font-size: 20px;
+}
+.description{
+    color: #000;
+}
+.listname{
+    font-weight: 700;
+}
+@media (max-width:768px) {
+    .popupbutton{
+        width: 89%;
+        height: 402px;
+    }
+    .popupinfo{
+        height: 350px;
+        width: 630px;
+    }
+    .modalimg{
+        width: 350px;
+        height: 350px;
+    }
+    .modalinfo{
+        font-size: 13px;
+    }
+    .modalinfo .modalname{
+        margin: 10px 0px 10px 0px;
+    }
+    .modalinfo .type{
+        margin: 0px 0px 20px 0px;
+    }
+    .modalinfo .description{
+        margin: 0px 0px 20px 0px;
+        line-height: 14.3px;
+    }
+    .modalinfo p {
+        margin: 0px;
+    }
+}
+@media (max-width:420px) {
+    .modalimg{
+        position: absolute;
+        z-index: -546;
+        right: 100%;
+    }
+    .modalinfo{
+        width: 100%;
+    }
+    .popupinfo{
+        width: 240px;
+        height: 370px;
+    }
+    .closebutton{
+        width: 52px;
+        height: 52px;
+    }
+}

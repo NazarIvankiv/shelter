@@ -55,6 +55,14 @@ function disableScroll() {
       const lastPage = document.getElementById('last-page')
       const PrePage = document.getElementById('prev-page')
       const firstPage = document.getElementById('first-page')
+      const petName1 = document.getElementById('petName1')
+      const petName2 = document.getElementById('petName2')
+      const petName3 = document.getElementById('petName3')
+      const petName4 = document.getElementById('petName4')
+      const petName5 = document.getElementById('petName5')
+      const petName6 = document.getElementById('petName6')
+      const petName7 = document.getElementById('petName7')
+      const petName8 = document.getElementById('petName8')
 fetch('../../assets/pets.json')
         .then(response => {
             return response.json();
@@ -93,6 +101,14 @@ fetch('../../assets/pets.json')
             card6img.setAttribute('src',data[result[5]].img)
             card7img.setAttribute('src',data[result[6]].img)
             card8img.setAttribute('src',data[result[7]].img)
+            petName1.innerHTML = data[result[0]].name
+            petName2.innerHTML = data[result[1]].name
+            petName3.innerHTML = data[result[2]].name
+            petName4.innerHTML = data[result[3]].name
+            petName5.innerHTML = data[result[4]].name
+            petName6.innerHTML = data[result[5]].name
+            petName7.innerHTML = data[result[6]].name
+            petName8.innerHTML = data[result[7]].name
             function ImgSet48(){
                 card1img.setAttribute('src',data[result[0 + count]].img)
                 card2img.setAttribute('src',data[result[1 + count]].img)
@@ -102,6 +118,14 @@ fetch('../../assets/pets.json')
                 card6img.setAttribute('src',data[result[5 + count]].img)
                 card7img.setAttribute('src',data[result[6 + count]].img)
                 card8img.setAttribute('src',data[result[7 + count]].img)
+                petName1.innerHTML = data[result[0 + count]].name
+                petName2.innerHTML = data[result[1 + count]].name
+                petName3.innerHTML = data[result[2 + count]].name
+                petName4.innerHTML = data[result[3 + count]].name
+                petName5.innerHTML = data[result[4 + count]].name
+                petName6.innerHTML = data[result[5 + count]].name
+                petName7.innerHTML = data[result[6 + count]].name
+                petName8.innerHTML = data[result[7 + count]].name
                 count +=8
                 currentPage.innerHTML = page += 1
                 console.log(count)
@@ -124,6 +148,14 @@ fetch('../../assets/pets.json')
                 card6img.setAttribute('src',data[result[result.length -6]].img)
                 card7img.setAttribute('src',data[result[result.length -7]].img)
                 card8img.setAttribute('src',data[result[result.length -8]].img)
+                petName1.innerHTML = data[result[result.length -1]].name
+                petName2.innerHTML = data[result[result.length -2]].name
+                petName3.innerHTML = data[result[result.length -3]].name
+                petName4.innerHTML = data[result[result.length -4]].name
+                petName5.innerHTML = data[result[result.length -5]].name
+                petName6.innerHTML = data[result[result.length -6]].name
+                petName7.innerHTML = data[result[result.length -7]].name
+                petName8.innerHTML = data[result[result.length -8]].name
                 currentPage.innerHTML = page = 6
                 count = 48
                 disabledlastPage()
@@ -147,6 +179,14 @@ fetch('../../assets/pets.json')
                 card6img.setAttribute('src',data[result[(count + 5) - count1]].img)
                 card7img.setAttribute('src',data[result[(count + 6) - count1]].img)
                 card8img.setAttribute('src',data[result[(count + 7) - count1]].img)
+                petName1.innerHTML = data[result[count - count1]].name
+                petName2.innerHTML = data[result[(count + 1) - count1]].name
+                petName3.innerHTML = data[result[(count + 2) - count1]].name
+                petName4.innerHTML = data[result[(count + 3) - count1]].name
+                petName5.innerHTML = data[result[(count + 4) - count1]].name
+                petName6.innerHTML = data[result[(count + 5) - count1]].name
+                petName7.innerHTML = data[result[(count + 6) - count1]].name
+                petName8.innerHTML = data[result[(count + 7) - count1]].name
                 count -= 8
                 currentPage.innerHTML = page -= 1
                 if(page != 6){
@@ -172,6 +212,14 @@ fetch('../../assets/pets.json')
                 card6img.setAttribute('src',data[result[5]].img)
                 card7img.setAttribute('src',data[result[6]].img)
                 card8img.setAttribute('src',data[result[7]].img)
+                petName1.innerHTML = data[result[0]].name
+                petName2.innerHTML = data[result[1]].name
+                petName3.innerHTML = data[result[2]].name
+                petName4.innerHTML = data[result[3]].name
+                petName5.innerHTML = data[result[4]].name
+                petName6.innerHTML = data[result[5]].name
+                petName7.innerHTML = data[result[6]].name
+                petName8.innerHTML = data[result[7]].name
                 currentPage.innerHTML = page = 1
                 count = 8
                 disabledPrePage()
@@ -191,14 +239,17 @@ fetch('../../assets/pets.json')
                 button.classList.remove('button')
             }
             function EnablePrePage(){
+                PrePage.addEventListener('click', PrevPage)
                 PrePage.classList.add('button')
                 PrePage.classList.remove('button-disabled')
             }
             function EnablefirstPage(){
+                firstPage.addEventListener('click', FirstPage)
                 firstPage.classList.add('button')
                 firstPage.classList.remove('button-disabled')
             }
             function EnableButton(){
+                button.addEventListener('click', ImgSet48)
                 button.classList.add('button')
                 button.classList.remove('button-disabled')
             }
@@ -234,6 +285,12 @@ fetch('../../assets/pets.json')
                     card4img.setAttribute('src',data[result[3]].img)
                     card5img.setAttribute('src',data[result[4]].img)
                     card6img.setAttribute('src',data[result[5]].img)
+                    petName1.innerHTML = data[result[0]].name
+                    petName2.innerHTML = data[result[1]].name
+                    petName3.innerHTML = data[result[2]].name
+                    petName4.innerHTML = data[result[3]].name
+                    petName5.innerHTML = data[result[4]].name
+                    petName6.innerHTML = data[result[5]].name
                     function ImgSet48(){
                         card1img.setAttribute('src',data[result[0 + countFor6]].img)
                         card2img.setAttribute('src',data[result[1 + countFor6]].img)
@@ -241,6 +298,12 @@ fetch('../../assets/pets.json')
                         card4img.setAttribute('src',data[result[3 + countFor6]].img)
                         card5img.setAttribute('src',data[result[4 + countFor6]].img)
                         card6img.setAttribute('src',data[result[5 + countFor6]].img)
+                        petName1.innerHTML = data[result[0 + countFor6]].name
+                        petName2.innerHTML = data[result[1 + countFor6]].name
+                        petName3.innerHTML = data[result[2 + countFor6]].name
+                        petName4.innerHTML = data[result[3 + countFor6]].name
+                        petName5.innerHTML = data[result[4 + countFor6]].name
+                        petName6.innerHTML = data[result[5 + countFor6]].name
                         countFor6 +=6
                         currentPage.innerHTML = pageFor6 += 1
                         console.log(countFor6)
@@ -261,6 +324,12 @@ fetch('../../assets/pets.json')
                             card4img.setAttribute('src',data[result[result.length -4]].img)
                             card5img.setAttribute('src',data[result[result.length -5]].img)
                             card6img.setAttribute('src',data[result[result.length -6]].img)
+                            petName1.innerHTML = data[result[result.length -1]].name
+                            petName2.innerHTML = data[result[result.length -2]].name
+                            petName3.innerHTML = data[result[result.length -3]].name
+                            petName4.innerHTML = data[result[result.length -4]].name
+                            petName5.innerHTML = data[result[result.length -5]].name
+                            petName6.innerHTML = data[result[result.length -6]].name
                             currentPage.innerHTML = pageFor6 = 8
                             countFor6 = 48
                             disabledlastPage()
@@ -282,6 +351,13 @@ fetch('../../assets/pets.json')
                             card4img.setAttribute('src',data[result[(countFor6 + 3) - count1For6]].img)
                             card5img.setAttribute('src',data[result[(countFor6 + 4) - count1For6]].img)
                             card6img.setAttribute('src',data[result[(countFor6 + 5) - count1For6]].img)
+                            petName1.innerHTML = data[result[countFor6 - count1For6]].name
+                            petName2.innerHTML = data[result[(countFor6 + 1) - count1For6]].name
+                            petName3.innerHTML = data[result[(countFor6 + 2) - count1For6]].name
+                            petName4.innerHTML = data[result[(countFor6 + 3) - count1For6]].name
+                            petName5.innerHTML = data[result[(countFor6 + 4) - count1For6]].name
+                            petName6.innerHTML = data[result[(countFor6 + 5) - count1For6]].name
+                            petName7.innerHTML = data[result[(countFor6 + 6) - count1For6]].name
                             countFor6 -= 6
                             currentPage.innerHTML = pageFor6 -= 1
                             if(pageFor6 != 8){
@@ -305,6 +381,12 @@ fetch('../../assets/pets.json')
                             card4img.setAttribute('src',data[result[3]].img)
                             card5img.setAttribute('src',data[result[4]].img)
                             card6img.setAttribute('src',data[result[5]].img)
+                            petName1.innerHTML = data[result[0]].name
+                            petName2.innerHTML = data[result[1]].name
+                            petName3.innerHTML = data[result[2]].name
+                            petName4.innerHTML = data[result[3]].name
+                            petName5.innerHTML = data[result[4]].name
+                            petName6.innerHTML = data[result[5]].name
                             currentPage.innerHTML = pageFor6 = 1
                             countFor6 = 6
                             disabledPrePage()
@@ -364,10 +446,16 @@ function PaginationFor3(){
             card1img.setAttribute('src',data[result[0]].img)
             card2img.setAttribute('src',data[result[1]].img)
             card3img.setAttribute('src',data[result[2]].img)
+            petName1.innerHTML = data[result[0]].name
+            petName2.innerHTML = data[result[1]].name
+            petName3.innerHTML = data[result[2]].name
             function ImgSet48(){
                 card1img.setAttribute('src',data[result[0 + countFor3]].img)
                 card2img.setAttribute('src',data[result[1 + countFor3]].img)
                 card3img.setAttribute('src',data[result[2 + countFor3]].img)
+                petName1.innerHTML = data[result[0 + countFor3]].name
+                petName2.innerHTML = data[result[1 + countFor3]].name
+                petName3.innerHTML = data[result[2 + countFor3]].name
                 countFor3 += 3
                 currentPage.innerHTML = pageFor3 += 1
                 console.log(countFor3)
@@ -385,6 +473,9 @@ function PaginationFor3(){
                     card1img.setAttribute('src',data[result[result.length -1]].img)
                     card2img.setAttribute('src',data[result[result.length -2]].img)
                     card3img.setAttribute('src',data[result[result.length -3]].img)
+                    petName1.innerHTML = data[result[result.length -1]].name
+                    petName2.innerHTML = data[result[result.length -2]].name
+                    petName3.innerHTML = data[result[result.length -3]].name
                     currentPage.innerHTML = pageFor3 = 16
                     countFor3 = 48
                     disabledlastPage()
@@ -403,6 +494,9 @@ function PaginationFor3(){
                     card1img.setAttribute('src',data[result[countFor3 - count1For3]].img)
                     card2img.setAttribute('src',data[result[(countFor3 + 1) - count1For3]].img)
                     card3img.setAttribute('src',data[result[(countFor3 + 2) - count1For3]].img)
+                    petName1.innerHTML = data[result[countFor3 - count1For3]].name
+                    petName2.innerHTML = data[result[(countFor3 + 1) - count1For3]].name
+                    petName3.innerHTML = data[result[(countFor3 + 2) - count1For3]].name
                     countFor3 -= 3
                     currentPage.innerHTML = pageFor3 -= 1
                     if(pageFor3 != 16){
@@ -423,6 +517,9 @@ function PaginationFor3(){
                     card1img.setAttribute('src',data[result[0]].img)
                     card2img.setAttribute('src',data[result[1]].img)
                     card3img.setAttribute('src',data[result[2]].img)
+                    petName1.innerHTML = data[result[0]].name
+                    petName2.innerHTML = data[result[1]].name
+                    petName3.innerHTML = data[result[2]].name
                     currentPage.innerHTML = pageFor3 = 1
                     countFor3 = 3
                     disabledPrePage()
