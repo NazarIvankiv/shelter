@@ -308,7 +308,6 @@ fetch('../../assets/pets.json')
 
 
 
-
           function TowCard(x) {
             if (x.matches) {
               card3.classList.add('resp')
