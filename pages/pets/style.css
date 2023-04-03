@@ -554,6 +554,7 @@ img{
     width: 70%;
     height: 552px;
     display: flex;
+    justify-content: center;
 }
 .closebutton{
     width: 52px;

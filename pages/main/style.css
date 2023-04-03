@@ -869,7 +869,7 @@ li{
     z-index: -1;
 }
 .popup{
-    position: fixed;
+    position:fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -889,6 +889,7 @@ li{
     height: 552px;
     display: flex;
     right: 0;
+    justify-content: center;
 }
 .closebutton{
     width: 52px;
